@@ -1,0 +1,23 @@
+<form action="/send" method="POST">
+<%- soru1 %>: <input type="text" id="sorubir" name="sorubir" required>
+<br><br>
+<%- soru2 %>: <input type="text" id="soruiki" name="soruiki" required>
+<br><br>
+<%- soru3 %>: <input type="text" id="soruuc" name="soruuc" required>
+<br><br>
+<%- soru4 %>: <input type="text" id="sorudort" name="sorudort" required>
+<br><br>
+<%- soru5 %>: <input type="text" id="sorubes" name="sorubes" required>
+<br><br>
+<%- soru6 %>: <input type="text" id="sorualti" name="sorualti" required>
+<input type="text" id="gerek" name="gerek" value="<%- gerekli %>" readonly hidden>
+  <input type="text" id="gerek1" name="gerek1" value="<%- soru1 %>" hidden>
+  <input type="text" id="gerek2" name="gerek2" value="<%- soru2 %>" hidden>
+  <input type="text" id="gerek3" name="gerek3" value="<%- soru3 %>" hidden>
+  <input type="text" id="gerek4" name="gerek4" value="<%- soru4 %>" hidden>
+  <input type="text" id="gerek5" name="gerek5" value="<%- soru5 %>" hidden>
+  <input type="text" id="gerek6" name="gerek6" value="<%- soru6 %>" hidden>
+  <br><br>
+  <br>
+<input type="submit" id="gonderr" name="gonderr">
+</form>
